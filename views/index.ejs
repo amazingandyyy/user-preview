@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>User-preview</title>
@@ -8,9 +8,13 @@
     <link rel='stylesheet' href='/css/style.css' />
     <script type="text/javascript" src="/bower_components/angular/angular.min.js"></script>
     <script type="text/javascript" src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+
+    <script src="/js/module.js"></script>
+    <script src="/js/services.js"></script>
+    <script src="/js/controllers.js"></script>
 </head>
 
-<body>
+<body ng-app="myApp" ng-controller="mainCtrl">
     <button type="button" class="btn btn-default" ui-sref="home">Home</button>
     <button type="button" class="btn btn-default" ui-sref="login">Login</button>
     <button type="button" class="btn btn-default" ui-sref="logout">Logout</button>
@@ -18,9 +22,7 @@
 
     <ui-view></ui-view>
 
-    <script src="/js/module.js"></script>
-    <script src="/js/services.js"></script>
-    <script src="/js/controllers.js"></script>
+
 </body>
 
 </html>
